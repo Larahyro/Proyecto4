@@ -19,7 +19,9 @@ import express from "express";
 import dotenv from "dotenv";
 import reservasRoutes from "./routes/reservasRoutes.js";
 
-al establecer los endpoints en reservasController.js establecí:
+//Estuve revisando varios tutoriales para poder ajustar el documento, pero al final lo partí desde cero...porque se me enredaba que debia cambiar y cuando iba o no el export
+
+//Al establecer los endpoints en reservasController.js establecí:
 export const filtrarReservas = (req, res) => {
     let resultados = [...reservas];
 
@@ -41,6 +43,7 @@ export const filtrarReservas = (req, res) => {
 
     res.json(resultados);
 };
-para los endpoint que requerian filtro.
+
+//para los endpoint que requerian filtro.
 // fue bastante complejo este proyecto...pues se me enredaban las carpetas de origen y colocaba cosas que iban en index.js en models etc.
 asi que espero que funcione.
